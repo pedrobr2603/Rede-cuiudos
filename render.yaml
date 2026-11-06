@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: rede-cuiudos
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
+      - key: HTTPS
+        value: "1"
+      - key: INVITE_CODE
+        sync: false
+      - key: MYSQL_URL
+        sync: false
+      - key: MYSQL_CA_PEM
+        sync: false

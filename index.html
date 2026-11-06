@@ -1,0 +1,11 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Rede Cuiudos</title><link rel="stylesheet" href="/app.css"></head><body>
+<div id="auth"><div class="lg"><div class="logo">🔥</div><h1>Rede <span>Cuiudos</span></h1>
+<div class="seg"><button id="m1" class="tab on">Entrar</button><button id="m2" class="tab">Criar conta</button></div>
+<input id="un" placeholder="usuário" autocapitalize="none" autocomplete="username"><input class="reg" id="nm" placeholder="seu nome (aparece pros amigos)" maxlength="30" hidden>
+<input id="pw" type="password" placeholder="senha (mín. 8)" autocomplete="current-password"><input class="reg" id="iv" placeholder="código de convite" hidden>
+<button id="sub">Entrar</button><p id="am" class="cnt"></p></div></div>
+<div id="app" hidden><header><h1>Rede <span>Cuiudos</span> 🔥</h1><nav><button class="tab on" data-t="feed">Feed</button><button class="tab" data-t="dm">Mensagens</button><button class="tab" data-t="ev">Eventos</button><button class="g" id="out">Sair</button></nav></header>
+<main><section id="feed"><div class="box"><textarea id="t" maxlength="500" placeholder="O que os cuiudos precisam saber?"></textarea><div class="row"><span class="cnt" id="n">0/500</span><button id="go">Postar</button></div></div><div id="list"></div></section>
+<section id="dm" hidden><div id="fl"></div><div id="conv" hidden><div class="row"><button class="g" id="back">← Voltar</button><b id="cw"></b></div><div id="ms"></div><div class="row"><input id="mi" maxlength="500" placeholder="Mensagem privada…"><button id="mg">Enviar</button></div></div></section>
+<section id="ev" hidden><div class="box"><input id="et" maxlength="80" placeholder="Nome do evento"><input id="ew" type="datetime-local"><input id="ep" maxlength="100" placeholder="Local (opcional)"><div class="row"><span></span><button id="eg">Criar evento</button></div></div><div id="el"></div></section></main></div>
+<script src="/app.js"></script></body></html>
